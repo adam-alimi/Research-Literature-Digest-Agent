@@ -43,7 +43,7 @@ flowchart LR
 
 ### 1. Import the workflow
 
-Import [`research-literature-digest-agent.workflow.json`](research-literature-digest-agent.workflow.json) into your n8n instance.
+Import [`workflows/research-literature-digest-agent.workflow.json`](workflows/research-literature-digest-agent.workflow.json) into your n8n instance.
 
 ### 2. Set environment variables
 
@@ -84,11 +84,11 @@ Toggle the workflow to **Active** in the n8n editor and it will run on schedule.
 
 ## Prompt template
 
-The summarization prompt is documented in [`anthropic-prompt-template.md`](anthropic-prompt-template.md). It asks Claude for strict JSON with three fields: a plain-language summary, a relevance score, and methodology tags.
+The summarization prompt is documented in [`docs/anthropic-prompt-template.md`](docs/anthropic-prompt-template.md). It asks Claude for strict JSON with three fields: a plain-language summary, a relevance score, and methodology tags.
 
 ## Sample output
 
-See [`sample-output.md`](sample-output.md) for an example of the Markdown digest that gets posted to Slack.
+See [`docs/sample-output.md`](docs/sample-output.md) for an example of the Markdown digest that gets posted to Slack.
 
 ## Optional: AI Agent extension
 
@@ -104,11 +104,13 @@ The rest of the pipeline stays the same.
 ## Project structure
 
 ```
-├── research-literature-digest-agent.workflow.json   # n8n workflow (import this)
+├── workflows/
+│   └── research-literature-digest-agent.workflow.json   # n8n workflow (import this)
 ├── env.example                                      # environment variable template
 ├── README.md
-├── anthropic-prompt-template.md                     # full prompt documentation
-└── sample-output.md                                 # example digest
+└── docs/
+  ├── anthropic-prompt-template.md                 # full prompt documentation
+  └── sample-output.md                             # example digest
 ```
 
 ## Notes
