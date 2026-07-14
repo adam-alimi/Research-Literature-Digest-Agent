@@ -18,9 +18,7 @@ flowchart LR
   E -- no --> K["⏹️ Skip"]
 ```
 
-Real n8n workflow screenshot:
 
-![Research Literature Digest Agent workflow](assets/workflow-n8n.jfif)
 
 ## What it does
 
