@@ -18,6 +18,10 @@ flowchart LR
   E -- no --> K["⏹️ Skip"]
 ```
 
+Real n8n workflow screenshot:
+
+![Research Literature Digest Agent workflow](assets/workflow-n8n.jfif)
+
 ## What it does
 
 1. A schedule trigger fires once a day (configurable to weekly).
@@ -104,13 +108,15 @@ The rest of the pipeline stays the same.
 ## Project structure
 
 ```
+├── assets/
+│   └── workflow-n8n.jfif                           # real n8n workflow screenshot
 ├── workflows/
 │   └── research-literature-digest-agent.workflow.json   # n8n workflow (import this)
 ├── env.example                                      # environment variable template
 ├── README.md
 └── docs/
-  ├── anthropic-prompt-template.md                 # full prompt documentation
-  └── sample-output.md                             # example digest
+    ├── anthropic-prompt-template.md                 # full prompt documentation
+    └── sample-output.md                             # example digest
 ```
 
 ## Notes
