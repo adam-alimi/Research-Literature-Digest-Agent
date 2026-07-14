@@ -106,8 +106,7 @@ The rest of the pipeline stays the same.
 ## Project structure
 
 ```
-├── assets/
-│   └── workflow-n8n.jfif                           # real n8n workflow screenshot
+                         
 ├── workflows/
 │   └── research-literature-digest-agent.workflow.json   # n8n workflow (import this)
 ├── env.example                                      # environment variable template
